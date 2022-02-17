@@ -1,0 +1,35 @@
+ERROR - 2022-02-17 04:18:17 --> No database selected
+CRITICAL - 2022-02-17 04:18:17 --> No database selected
+#0 C:\xampp1\htdocs\product\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp1\htdocs\product\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp1\htdocs\product\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp1\htdocs\product\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp1\htdocs\product\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp1\htdocs\product\app\Models\ProductModel.php(37): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp1\htdocs\product\app\Controllers\Product.php(21): App\Models\ProductModel->listing(5)
+#7 C:\xampp1\htdocs\product\system\CodeIgniter.php(825): App\Controllers\Product->index()
+#8 C:\xampp1\htdocs\product\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#9 C:\xampp1\htdocs\product\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\product\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-02-17 04:18:54 --> No database selected
+CRITICAL - 2022-02-17 04:18:54 --> No database selected
+#0 C:\xampp1\htdocs\product\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp1\htdocs\product\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp1\htdocs\product\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp1\htdocs\product\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp1\htdocs\product\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp1\htdocs\product\app\Models\ProductModel.php(37): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp1\htdocs\product\app\Controllers\Product.php(21): App\Models\ProductModel->listing(5)
+#7 C:\xampp1\htdocs\product\system\CodeIgniter.php(825): App\Controllers\Product->index()
+#8 C:\xampp1\htdocs\product\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#9 C:\xampp1\htdocs\product\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\product\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-02-17 05:50:15 --> Call to undefined method App\Models\ProductModel::get_detail_by_slug
+#0 C:\xampp1\htdocs\product\app\Controllers\Product.php(79): CodeIgniter\Model->__call('get_detail_by_s...', Array)
+#1 C:\xampp1\htdocs\product\system\CodeIgniter.php(825): App\Controllers\Product->add()
+#2 C:\xampp1\htdocs\product\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#3 C:\xampp1\htdocs\product\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\product\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
